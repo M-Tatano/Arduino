@@ -10,7 +10,7 @@ codes and ways to get values of Arduino by Bluetooth
 ## LED blink   
 ・Write LED_blink.ino (Arduino/bluetooth/LED_blink.ino)    
 
-##application  
+#### application  
 ・Install "nRF Connect" application (also used for iOS & Android)  
 
 ## How to use this application  
