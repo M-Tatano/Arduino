@@ -4,16 +4,18 @@
 ## Description  
 codes and ways to get values of Arduino by Bluetooth  
 
-## Acceraration sensor serial communication    
+## Acceleration sensor serial communication
+#### code  
 ・Write analogdata.ino on board (Arduino/analogdata/analogdata.ino)    
 
-## LED blink   
+## LED blink  
+#### code    
 ・Write LED_blink.ino (Arduino/bluetooth/LED_blink.ino)    
 
 #### application  
 ・Install "nRF Connect" application (also used for iOS & Android)  
 
-## How to use this application  
+#### How to use this application  
 ・search "LED"    
 ・Auduino device should be found as "LED" or "Arduino101-EFE3"  
 ・Push "CONECT"button   
