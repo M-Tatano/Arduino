@@ -27,6 +27,8 @@ void loop() {
   float angleXaccel, angleYaccel, angleZaccel;
 
   // read gyro measurements from device, scaled to the configured range
+  //CURIE_IMU_SHOCK:
+        //       2G: 3.91 to 1995.46 (mg), in steps of 7.81 mg
   CurieIMU.readGyroScaled(gx, gy, gz);
   
   // calculation of angle by accelometer
@@ -41,9 +43,9 @@ void loop() {
 
 
   // simpified implementary filter 
-  angleX = 0.95*(angleX+gx*dt)+0.05*angleXaccel;
-  angleY = 0.95*(angleY+gy*dt)+0.05*angleYaccel;
-  angleZ = 0.95*(angleZ+gz*dt)+0.05*angleZaccel;
+  angleX = 0.95*(angleX+gx*10e-3*dt)+0.05*angleXaccel;
+  angleY = 0.95*(angleY+gy*10e-3*dt)+0.05*angleYaccel;
+  angleZ = 0.95*(angleZ+gz*10e-3*dt)+0.05*angleZaccel;
 
 //dispaly sensored values
 
