@@ -43,9 +43,9 @@ void loop() {
 
 
   // simpified implementary filter 
-  angleX = 0.95*(angleX+gx*10e-3*dt)+0.05*angleXaccel;
-  angleY = 0.95*(angleY+gy*10e-3*dt)+0.05*angleYaccel;
-  angleZ = 0.95*(angleZ+gz*10e-3*dt)+0.05*angleZaccel;
+  angleX = 0.95*(angleX+gx*7.81*10e-3*dt)+0.05*angleXaccel;
+  angleY = 0.95*(angleY+gy*7.81*10e-3*dt)+0.05*angleYaccel;
+  angleZ = 0.95*(angleZ+gz*7.81*10e-3*dt)+0.05*angleZaccel;
 
 //dispaly sensored values
 
